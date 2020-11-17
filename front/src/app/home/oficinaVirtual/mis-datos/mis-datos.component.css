@@ -1,0 +1,80 @@
+/* Accordion Container */
+.oficinaVirtualContainer {
+    width: auto;
+    height: auto;
+    background-color: #f6f1eb;
+    padding: 10px;
+}
+
+.buttonCenter {
+    text-align: center;
+
+}
+
+.buttonOficina {
+    background-color: white;
+    border-radius: 5%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 95%;
+    font-weight: bold;
+    color: #707070;
+}
+
+.buttonGuardarCambios {
+    margin: auto;
+    margin-top: 50px;
+    background-color: #0cbed2;
+    display: grid;
+    align-items: center;
+    height: 60px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.imgAsterisk {
+    float: left;
+    width: 2%;
+    height: 2%;
+    padding-left: 2px;
+
+
+}
+
+.asteriskCenter {
+    vertical-align: middle;
+    padding: 12px;
+}
+
+.imgBanner {
+
+    /* position: relative; */
+    z-index: 1;
+    width: 100%;
+    height: 10%;
+
+}
+
+.contenedorBanner {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.centradoTexto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+
+}
+
+

@@ -1,0 +1,646 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* ACUA */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*                            Boutique's Styles                             */
+
+/*Map Styles*/
+
+#mainContent {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#map {
+  float: left;
+  height: 700px;
+  width: 70%;
+  border-radius: 5px;
+}
+
+#boutiques {
+  width: 30%;
+  height: auto;
+  display: flex;
+  text-align: left;
+  justify-content: top;
+  flex-direction: column;
+  float: left;
+  border: #70707036 solid 1px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.item {
+  padding: 10px;
+  border-bottom: #70707036 solid 1px;
+  height: 10%;
+  width: auto;
+}
+
+.item a {
+  text-decoration: none;
+  color: #707070;
+  text-align: left;
+  font-weight: bold;
+}
+
+.item p {
+  font-size: 14px;
+  margin: 5px;
+}
+
+/*  Finish Boutique's Styles  */
+
+/*  Login and Registry Styles */
+
+#containerLoginAndRegistry {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: row;
+  float: left;
+  width: auto;
+  height: 700px;
+  padding: 10px;
+}
+
+#login {
+  float: left;
+  width: 50%;
+  height: 750px;
+  border-bottom: #70707036 solid 1px;
+}
+
+#registry {
+  float: left;
+  width: 50%;
+  height: 750px;
+  border-bottom: #70707036 solid 1px;
+}
+
+.title {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.form {
+  padding: 20px 50px;
+}
+
+.form input {
+  width: 96%;
+  height: 20px;
+  border-color: #70707036;
+}
+
+.form button {
+  margin-top: 10px;
+  background-color: #0cbed2;
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+  border: black 1px;
+  font-weight: bold;
+  color: #585757;
+}
+
+.wrong {
+  border: 1px solid red;
+}
+
+/* Create Perfume */
+
+.createPerfume {
+  width: auto;
+  height: 300px;
+  background-color: #f6f1eb;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+#piano {
+  float: left;
+  padding: 10px 0 0 0;
+}
+#piano img {
+  height: 280px;
+  width: auto;
+}
+.textR {
+  float: left;
+  margin: auto;
+  margin-top: 30px;
+  width: 60%;
+  text-align: center;
+}
+#tituloUnico {
+  color: #0cbed2;
+  padding-bottom: 50px;
+  font-size: 30px;
+}
+.buttonCreate {
+  margin: auto;
+  margin-top: 50px;
+  background-color: #0cbed2;
+  display: grid;
+  align-items: center;
+  height: 30px;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+.enlace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+.enlace > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.buttonCreate:hover {
+  background-color: #0ba5b6;
+  cursor: pointer;
+}
+
+/* Cellphone Responsive*/
+
+@media screen and (max-width: 500px) {
+  #headerContainer {
+    width: auto;
+  }
+  #pin,
+  #country,
+  #language,
+  #deliveryPromo,
+  #browser {
+    display: none;
+  }
+  #hamburguer {
+    float: left;
+    width: 30px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 6px;
+  }
+  #hamburguer img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #ownAccount {
+    padding-left: 135px;
+  }
+  #bag {
+    float: right;
+    padding-right: 10px;
+  }
+  #store {
+    display: none;
+  }
+  #mainMenu {
+    display: none;
+  }
+  #indexContent {
+    width: 100%;
+    height: auto;
+    padding: unset;
+  }
+  #logoCell {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  #headerIndex {
+    padding: unset;
+  }
+  #textHeaderIndex {
+    width: 45%;
+  }
+  .mainSlider {
+    width: 100%;
+    height: 200px;
+  }
+  .sliderContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .sliderContainer img {
+    width: 500px;
+    height: 200px;
+  }
+  .prev,
+  .next,
+  .controls {
+    display: none;
+  }
+  .lowerControl {
+    width: 35px;
+  }
+  #sectionsIndex {
+    width: 100%;
+    height: auto;
+    padding: unset;
+  }
+  .mainSection {
+    float: none;
+    margin: 10px;
+    width: 93%;
+    height: 220px;
+  }
+
+  .mainSection img {
+    width: 100%;
+    height: 100%;
+  }
+  .createPerfume {
+    display: flex;
+    align-content: center;
+  }
+  .textR {
+    width: 95%;
+  }
+  #piano {
+    display: none;
+  }
+
+  #footerContainer {
+    display: grid;
+  }
+  #rights {
+    width: 100%;
+    font-size: 12px;
+  }
+  #documents {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #hamburguer {
+    display: none;
+  }
+  #logoCell {
+    display: none;
+  }
+  .prev,
+  .next,
+  .controls {
+    display: none;
+  }
+}
+
+/* Index's Content Styles */
+
+#indexContent {
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+/* index´s header styles */
+
+#headerIndex {
+  width: 100%;
+  height: 34px;
+  padding: 10px;
+}
+
+#containerHeaderIndex {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.separadorH {
+  width: 20%;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#textHeaderIndex {
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-size: 95%;
+  font-weight: bold;
+  color: #707070;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.separadorH hr {
+  size: 2px;
+  width: 100%;
+  color: #70707036;
+}
+
+#mainBlock {
+  width: 100%;
+  height: 60%;
+  padding: 10px;
+}
+
+/* index´s slider styles */
+
+.mainSlider {
+  width: 100%;
+  height: 352px;
+  overflow: hidden;
+}
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.sliderContainer img {
+  width: 1052px;
+  height: 351px;
+}
+/* Next & previous buttons */
+
+.prev,
+.next {
+  cursor: progress;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button"*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a gray background color*/
+.prev:hover,
+.next:hover {
+  background-color: #bbb;
+}
+
+/* Controls */
+.lowerControl {
+  cursor: pointer;
+  height: 3px;
+  width: 70px;
+  margin: 0 2px;
+  background-color: #0cbdd2;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.lowerControl:hover {
+  height: 7px;
+}
+/* Finish index´s slider styles */
+
+/* index´s sections styles */
+
+#sectionsIndex {
+  padding: 40px 0px 40px;
+}
+
+.mainSection {
+  position: relative;
+  border: #70707036 solid 2px;
+  height: 200px;
+  width: auto;
+  float: left;
+  width: 30%;
+  margin: 0px 15px;
+  border-radius: 5px;
+}
+
+.mainSection:hover {
+  border: #4d4b4b solid 2px;
+}
+
+.mainSection img {
+  width: 311px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.textSection {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  font-size: 10px;
+}
+
+.textSection p {
+  font-size: 20px;
+  font-weight: bold;
+}
+/* Finish Index's Styles */

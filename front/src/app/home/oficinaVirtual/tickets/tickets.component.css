@@ -1,0 +1,436 @@
+/* Index's Content Styles */
+
+#indexContent {
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  
+.decorationHeader{
+    height: 3px;
+    width: 120px;
+    border-top: 1px solid #707070;
+}
+
+
+.containerVirtualOffice{
+    background-color: #F6F1EB;
+    padding: 10px;
+}
+
+.virtualOffice{
+    position: relative;
+    top: -100px;
+    height: 168px;
+}
+
+.virtualOffice .header{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #707070;
+}
+
+.virtualOffice .header h3{
+    margin: 0 30px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+} 
+
+.virtualOffice .options{
+    display: flex;
+    justify-content: space-evenly;
+    margin: .5em;
+}
+
+.virtualOffice .options .option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    border: 1px solid #707070;
+    padding: .3em 1.1em;
+    border-radius: .3em;
+    background-color: white;
+    color: #707070;
+    font-weight: bold;
+    letter-spacing: .1em;
+    position: relative;
+}
+
+.virtualOffice .options .option:hover{
+    color: #0cbdd2;
+    border-color: #0cbdd2;
+    cursor: pointer;
+}
+
+.virtualOffice .options .option a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.virtualOffice .news{
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    background-image: url("../../../../assets/img/virtualOffice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.panelHeader{
+    display: flex;
+    height: 70px;
+}
+
+.panelHeader .leftHeader{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panelHeader .rightHeader{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.panelHeader .rightHeader h3{
+    margin: 0 30px;
+    color: #707070;
+    letter-spacing: .2em;
+}
+
+.panels{
+    display: flex;
+}
+
+.panels .leftPanel{
+    width: 50%;
+    font-size: 11px;
+    color: #707070;
+    letter-spacing: .5px;
+    line-height: 1.2em;
+}
+
+
+.panels .leftPanel .tickets .ticket{
+    display: flex;
+    align-items: center;
+    border: 1px solid #c7c5c5;
+    border-radius: .3em;
+    padding: 15px 20px;
+    padding-right: 5px;
+    cursor: pointer;
+    height: auto;
+}
+
+.panels .leftPanel .tickets .ticket .ticketHeader{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panels .leftPanel .tickets .ticket .ticketHeader .header{
+    display: flex;
+    margin: 3px;
+}
+
+.panels .leftPanel .tickets .ticket .ticketHeader .date{
+    margin: 3px;
+}
+
+
+.panels .leftPanel .tickets .ticket .ticketHeader .header .ticketTitle{
+    color: #0cbdd2;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.panels .leftPanel .tickets .ticket .ticketHeader .header .ticketNumber{   
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.panels .leftPanel .tickets .ticket .ticketInfo{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.panels .leftPanel .tickets .ticket .ticketInfo .ticketType{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3px;
+}
+
+.panels .leftPanel .tickets .ticket .ticketInfo .ticketState{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3px;
+    background-color:  #0cbdd2;
+    color: white;
+    font-size: 1em;
+    border-radius: .5em;
+}
+
+.panels .leftPanel .tickets .ticket .abrirCerrar{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.panels .leftPanel .tickets .ticket .abrirCerrar span{
+    color: #0cbdd2;
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.panels .leftPanel .ticketDetail{
+    padding: 1.5em;
+    background-color: white;
+    border-left: 1px solid #c7c5c5;
+    border-right: 1px solid #c7c5c5;
+    min-height: 260px;
+    display: none;
+}
+
+.panels .leftPanel .ticketDetail .customerMessage{
+    margin: 10px;
+}
+
+.panels .leftPanel .ticketDetail .ownerMessage{
+    color: #0cbdd2;
+    display: flex;
+    align-items: center;
+}
+
+.panels .leftPanel .ticketDetail .ownerMessage .iconDecoration{
+    height: 3px;
+    width: 100px;
+    border-top: 1px solid #0cbdd2;
+    margin: 0 10px;
+}
+
+.panels .leftPanel .ticketDetail .customerMessage .ownerMessage .iconDecoration{
+    height: 3px;
+    width: 100px;
+    border-top: 1px solid #0cbdd2;
+}
+
+.panels .leftPanel .ticketDetail .textMessage .message{
+    width: 85%;
+    margin: 5px 0;
+}
+
+.panels .leftPanel .ticketDetail .acuaMessage .ownerMessage{
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+.panels .leftPanel .ticketDetail .acuaMessage .ownerMessage .messageIcon img{
+    height: 18px;
+}
+
+.panels .leftPanel .ticketDetail .acuaMessage .textMessage{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.panels .leftPanel .ticketDetail .sendMessage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.panels .leftPanel .ticketDetail .sendMessage .writeMessage{
+    height: auto;
+    width: 90%;
+    border: 1px solid #c7c5c5;
+    border-radius: .2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.panels .leftPanel .ticketDetail .sendMessage .writeMessage .text{
+    border: none;
+    width: 90%;
+    overflow: hidden;
+    resize: none;
+    min-height: 1em;
+}
+
+.panels .leftPanel .ticketDetail .sendMessage .writeMessage .text[contenteditable]:empty::before {
+    content: "Escribir mensaje aquí";
+    color: gray;
+  }
+
+.panels .leftPanel .ticketDetail .sendMessage img{
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.panels .rightPanel{
+    width: 50%;
+}
+
+.panels .rightPanel .ticketForm .radioButtons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    margin: 15px 5px;
+}
+
+.panels .rightPanel .ticketForm .radioButtons .radioButton input{
+    width: 8px;
+    margin: 0 .1em;
+}
+
+.panels .rightPanel .ticketForm .radioButtons .radioButton label{
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #707070;
+    margin: 0 .3em 0 .1em;
+}
+
+.panels .rightPanel .ticketForm .inputForm{
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.panels .rightPanel .ticketForm .inputForm input{
+    width: 85%;
+    height: 2.5em;
+    margin: 10px;
+    padding: 0 15px;
+    border-radius: .3em;
+    border: 1px solid #707070;
+}
+
+
+.panels .rightPanel .ticketForm .inputForm textarea{
+    width: 85%;
+    height: 17.5em;
+    margin: 10px;
+    margin-bottom: 0;
+    padding: 10px 15px;
+    border-radius: .3em;
+    border: 1px solid #707070;
+}
+
+.panels .rightPanel .ticketForm .inputForm span{
+    color: #0cbdd2;
+    font-size: 2em;
+}
+
+.panels .rightPanel .ticketForm .inputForm span.hidden{
+    opacity: 0;
+}
+
+.panels .rightPanel .ticketForm .attach{
+    margin: 10px 25px;
+    height: auto;
+    position: relative;
+}
+
+.panels .rightPanel .ticketForm .attach .inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+	z-index: -1;
+}
+
+.panels .rightPanel .ticketForm .attach label{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: .8em;
+    cursor: pointer;
+    color: #0cbdd2;
+    width: fit-content;
+}
+
+.panels .rightPanel .ticketForm .attach label span{
+    font-size: 2.5em;
+    margin: 0 10px;
+}
+
+.panels .rightPanel .ticketForm .buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.panels .rightPanel .ticketForm .buttons button{
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 1.5em;
+    color: white;
+    border: none;
+    border-radius: .2em;
+}
+
+.panels .rightPanel .ticketForm .buttons .send{
+    background-color: #0cbdd2;
+    color: white;
+    border: none;
+}
+
+.panels .rightPanel .ticketForm .buttons .cancel{
+    background-color: #707070;
+    color: white;
+    border: none;
+}

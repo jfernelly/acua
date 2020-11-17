@@ -1,0 +1,130 @@
+/*Menu Styles*/
+
+#mainMenu {
+    position: sticky;
+    top: 70px;
+    float: left;
+    width: 20%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-right: #70707036 solid 1px;
+    
+  }
+
+  /*Logo´s Style*/
+  .logo {
+    height: 20%;
+    width: auto;
+    position: relative;
+    top: 0px;
+    padding: 15px;
+    margin-bottom: auto;
+  }
+
+  /*Link´s Style*/
+  .linksMenu {
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 114px;
+    font-size: 95%;
+    
+  }
+  
+  .boutique {
+    height: 31%;
+    border-top: #70707036 solid 1px;
+    padding-top: 30px;
+  }
+
+  .blockTextMenu {
+    height: 23%;
+    width: auto;
+    padding-left: 60px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  
+  .blockTextMenu button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+  }
+  
+  .control--effects {
+    color: #707070;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .control--effects:hover {
+    color: #0cbdd2;
+  }
+  
+  .blockTextMenu a {
+    text-decoration: none;
+    color: #707070;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .blockTextMenu a:hover {
+    color: #0cbdd2;
+  }
+  
+
+  .socialMedia {
+    height: 10%;
+    position: relative;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .socialLogo {
+    float: left;
+    padding: 0px 4px 0px 4px;    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+   }
+
+   .socialIcon:hover {
+    border: #0cbdd2 2px solid;
+    border-radius: 15px;
+    
+  }
+
+  @media screen and (min-width:500px) {
+    #hamburguer {
+      display: none;
+    }
+    #logoCell {
+      display: none;
+    }
+    .prev, .next, .controls {
+      display: none;
+    }
+  }
+   
+
+/*Finish Menu Styles*/
