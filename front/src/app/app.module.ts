@@ -14,6 +14,7 @@ import { PedidosComponent } from './home/oficinaVirtual/pedidos/pedidos.componen
 import { MisDatosComponent } from './home/oficinaVirtual/mis-datos/mis-datos.component';
 import { LoginComponent } from './home/acceso/login/login.component';
 import { RegistroComponent } from './home/acceso/registro/registro.component';
+import { FormsModule } from '@angular/forms';
 
 const appRouter: Routes = [
   {path: 'Ingreso', component: LoginComponent },
@@ -42,7 +43,8 @@ const appRouter: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterModule.forRoot(appRouter)
+    RouterModule.forRoot(appRouter),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
