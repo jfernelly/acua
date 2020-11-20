@@ -33,9 +33,13 @@ export class LoginComponent implements OnInit {
     this.auth.registroUsuario(this.registrarUsuario).subscribe(
       (res) => {
         console.log(res);
-        this.router.navigate(['/login'])
+        this.router.navigate(['/Ingreso']);
+        window.alert("Registro exito!!! Ya puedes acceder a nustra aplicación")
       },
-      (err) => console.log(err)
+      (err) => {
+        console.log(err);
+        window.alert("Tus datos estan el sistema")
+      }
     );
   }
 }
