@@ -4,13 +4,16 @@ const jwt = require("jsonwebtoken");
 
 //Esquema de la coleccion
 const esquemaUsuario = new mongoose.Schema({
-  nombre: String,
-  apellido: String,
+  nombres: String,
+  apellidos: String,
+  fechaNacimiento:Date,
+  genero:String,
   tipoDocumento: String,
   numeroDocumento: String,
   departamento: String,
   ciudad: String,
   direccion: String,
+  tipoVivienda:String,
   telefono: String,
   correo: String,
   pass: String,
