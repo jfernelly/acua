@@ -13,7 +13,6 @@ export class LoginComponent implements OnInit {
 
   //Datos obtenidos desde el HTML
   registrarUsuario = {
-  
       "nombre": "",
       "apellido": "",
       "tipoDocumento": "",
@@ -24,7 +23,11 @@ export class LoginComponent implements OnInit {
       "telefono": "",
       "correo": "",
       "pass": "",
-  
+  };
+
+  loguear = {
+    "correo": '',
+    "pass": '',
   };
 
   ngOnInit(): void {}
@@ -38,7 +41,21 @@ export class LoginComponent implements OnInit {
       },
       (err) => {
         console.log(err);
-        window.alert("Tus datos estan el sistema")
+        window.alert("Tus datos están el sistema")
+      }
+    );
+  }
+
+  login() {
+    this.auth.loginUsuario(this.loguear).subscribe(
+      (res) => {
+        console.log(res);
+        localStorage.setItem('token', res.jwtToken);
+        this.router.navigate(['/Pedidos'])
+      },
+      (err) => {
+        console.log(err);
+        window.alert("Tus datos están errados")
       }
     );
   }
