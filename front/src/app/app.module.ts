@@ -10,15 +10,16 @@ import { FooterComponent } from './footer/footer.component';
 import { InfoComponent } from './home/info/info.component';
 import { MenuComponent } from './home/oficinaVirtual/menu/menu.component';
 import { TicketsComponent } from './home/oficinaVirtual/tickets/tickets.component';
-import { PedidosComponent } from './home/oficinaVirtual/pedidos/pedidos.component';
 import { MisDatosComponent } from './home/oficinaVirtual/mis-datos/mis-datos.component';
 import { LoginComponent } from './home/acceso/login/login.component';
 import { RegistroComponent } from './home/acceso/registro/registro.component';
+import { ListarComponent } from './home/oficinaVirtual/pedido/listar/listar.component';
+import { CrearComponent } from './home/oficinaVirtual/pedido/crear/crear.component';
 
 const appRouter: Routes = [
   {path: 'Ingreso', component: LoginComponent },
-  {path: 'Oficina', component: PedidosComponent},
-  {path: 'Pedidos', component: PedidosComponent},
+  {path: 'Oficina', component: ListarComponent},
+  {path: 'Pedidos', component: ListarComponent},
   {path: 'Datos', component: MisDatosComponent},
   {path: 'Tickets', component: TicketsComponent},
   {path: '', component: InfoComponent  , pathMatch: 'full'}
@@ -33,10 +34,11 @@ const appRouter: Routes = [
     FooterComponent,
     MenuComponent,
     TicketsComponent,
-    PedidosComponent,
     MisDatosComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    ListarComponent,
+    CrearComponent
   ],
   imports: [
     BrowserModule,

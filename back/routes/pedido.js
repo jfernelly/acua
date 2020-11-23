@@ -5,7 +5,7 @@ const router = express.Router();
 const Pedido = require("../model/pedido");
 const { Usuario } = require("../model/usuario");
 const auth = require("../middleware/auth");
-const cargarArchivo = require("../middleware/file");
+
 // Rutas
 // Obtener actividades del usuario
 router.get("/lista", auth, async (req, res) => {
@@ -34,37 +34,6 @@ router.post("/", auth, async (req, res) => {
   const result = await pedido.save();
   res.status(200).send(result);
 });
-// Registrar actividad con imagen
-router.post(
-  "/cargarArchivo",
-  cargarArchivo.single("imagen"),
-  auth,
-  async (req, res) => {
-    // Recibe protocolo http y https con el local o dominio
-    const url = req.protocol + "://" + req.get("host");
-    // verificamos si existe el usuario
-    const usuario = await Usuario.findById(req.usuario._id);
-    // si el usuario no existe
-    if (!usuario) return res.status(400).send("No existe el usuario en BD");
-    // Definimos la ruta de imagen como null
-    let rutaImagen = null;
-    if (req.file.filename) {
-      rutaImagen = url + "/public/" + req.file.filename;
-    } else {
-      rutaImagen = null;
-    }
-    // guardamos en BD la imagen
-    const pedido = new Pedido({
-      idUsuario: usuario._id,
-      pedido: req.body.pedido,
-      estado: req.body.estado,
-      imagen: rutaImagen,
-    });
-
-    const result = await pedido.save();
-    res.status(201).send(result);
-  }
-);
 
 // Editar actividad
 router.put("/", auth, async (req, res) => {
