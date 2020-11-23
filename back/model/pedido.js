@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const esquemaPedido = new mongoose.Schema({
   idUsuario: String,
   pedido: String,
-  imagen: String,
   estado: String,
   fecha: {
     type: Date,
