@@ -12,9 +12,17 @@ import { MenuComponent } from './home/oficinaVirtual/menu/menu.component';
 import { TicketsComponent } from './home/oficinaVirtual/tickets/tickets.component';
 import { MisDatosComponent } from './home/oficinaVirtual/mis-datos/mis-datos.component';
 import { LoginComponent } from './home/acceso/login/login.component';
+
+
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
+import { AuthService } from './service/auth.service'
+  
+
 import { RegistroComponent } from './home/acceso/registro/registro.component';
 import { ListarComponent } from './home/oficinaVirtual/pedido/listar/listar.component';
 import { CrearComponent } from './home/oficinaVirtual/pedido/crear/crear.component';
+
 
 const appRouter: Routes = [
   {path: 'Ingreso', component: LoginComponent },
@@ -39,14 +47,17 @@ const appRouter: Routes = [
     RegistroComponent,
     ListarComponent,
     CrearComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterModule.forRoot(appRouter)
+    RouterModule.forRoot(appRouter),
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
