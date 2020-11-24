@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../../service/auth.service';
+import { Router } from '@angular/router';
+import { DatosService } from '../../../service/datos.service';
 
 @Component({
   selector: 'app-mis-datos',
@@ -7,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MisDatosComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+     private auth: AuthService,
+    private router: Router,
+    private tablero: DatosService
+  ) { }
 
   ngOnInit(): void {
   }
