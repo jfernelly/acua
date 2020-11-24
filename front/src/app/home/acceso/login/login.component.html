@@ -1,131 +1,227 @@
-    <!--Begining of index's content-->
- <div id="indexContent">
-        <div id="containerLoginAndRegistry">
-            <div id="login">
-                <div class="title">
-                    <div class="separadorH">
-                        <hr>
-                    </div>
-                    <div id="textHeaderIndex">
-                        <p>INGRESAR</p>
-                    </div>
-                    <div class="separadorH">
-                        <hr>
-                    </div>
-                </div>
-                <div class="form">
-                    <p class="legend">Ingresa tu email y contraseña para identificarte.</p>
-                    <br>
-                    <label for="mail">Correo</label>
-                    <br>
-                    <input type="email" id="mail">
-                    <div id="wrongMail" style="color: crimson; font-size: 10px;"></div>
-                    <br>
-                    <label for="password">Contraseña</label>
-                    <br>
-                    <input type="password" id="password">
-                    <div id="wrongPassword" style="color: crimson; font-size: 10px;"></div>
-                    <br>
-                    <a href="#" style="font-size: 10px;">Olvide mi contraseña</a>
-                    <br>
-                    <button onclick="obtenerValorLog()">Iniciar Sesion</button>
-                </div>
-            </div>
-
-            <div id="registry">
-                <div class="title">
-                    <div class="separadorH">
-                        <hr>
-                    </div>
-                    <div id="textHeaderIndex">
-                        <p>REGISTRO</p>
-                    </div>
-                    <div class="separadorH">
-                        <hr>
-                    </div>
-                </div>
-                <div class="form">
-                    <div style="padding: 10px">
-                        <p class="legend">Registrate, recibe acceso a nuestra inovadora forma de comprar.</p>
-                        <br>
-                        <input type="email" id="newMail" placeholder="Correo electrónico*">
-                        <div id="wrong" style="color: crimson; font-size: 10px;"></div>
-                        <br>
-                        <input type="password" id="newPassword" placeholder="Nueva contraseña*">
-                        <div id="wrong2" style="color: crimson; font-size: 10px;"></div>
-                        <br>
-                        <input type="password" id="passwordConfirm" placeholder="Confirma tu contraseña*">
-                        <div id="wrong3" style="color: crimson; font-size: 10px;"></div>
-                        <br>
-                        <div class="title">
-                            <div class="separadorH">
-                                <hr>
-                            </div>
-                            <div id="textHeaderIndex" style="width: 45%;">
-                                <p>DATOS DE CONTACTO</p>
-                            </div>
-                            <div class="separadorH">
-                                <hr>
-                            </div>
-                        </div>
-                        <input type="text" id="completeName" placeholder="Nombres*">
-                        <div id="wrong4" style="color: crimson; font-size: 10px;"></div>
-                        <br>
-                        <input type="text" id="lastName" placeholder="Apellidos*">
-                        <div id="wrong5" style="color: crimson; font-size: 10px;"></div>
-                        <br>
-                        <select name="idType" id="idType"
-                            style="width: 12%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
-                            <option value="CC">CC</option>
-                            <option value="CE">CE</option>
-                            <option value="TI">TI</option>
-                        </select>
-                        <input type="number" style="width: 83%;" id="id" placeholder="Num. Documento*">
-                        <div id="wrong6" style="color: crimson; font-size: 10px;"></div>
-                        <br>
-                        <select name="departament" id="departament"
-                            style="width: 99%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
-                            <option value="Cundinamarca">Cundinamarca</option>
-                            <option value="Antioquia">Antioquia</option>
-                            <option value="Amazonas">Amazonas</option>
-                        </select>
-                        <br>
-                        <br>
-                        <select name="city" id="ciy"
-                            style="width: 99%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
-                            <option value="Bogotá">Bogotá</option>
-                            <option value="Medellin">Medellin</option>
-                            <option value="Mitu">Mitu</option>
-                        </select>
-                        <br>
-                        <br>
-                        <input type="text" id="address" placeholder="Dirección">
-                        <div id="wrong" style="color: crimson; font-size: 10px;"></div>
-                        <br>
-                        <input type="text" id="tel" placeholder="Teléfono">
-                        <div id="wrong" style="color: crimson; font-size: 10px;"></div>
-                        <br>
-                        <div style="display:flex; text-align: left; justify-content: center; flex-direction: row;">
-                            <input type="radio" id="radio" name="radio"
-                                style="width: auto; height: auto; margin: 5px; float: left;">
-                            <label style="margin-bottom: -2px; margin-right: 2px;" for="radio"></label>
-                            <div style="font-size: 10px; width: 90%; height: 26px; float: left;">
-                                He leido y acepto los
-                                <a href="#" style="text-decoration: none; color: black; font-weight: bold;"> Terminos y
-                                    condiciones </a>
-                                y autorizo el manejo de mis datos personales bajo la
-                                <a href="#" style="text-decoration: none; color: black; font-weight: bold;">Politica de
-                                    tratamiento de datos </a>
-                            </div>
-
-                        </div>
-                        <br>
-                        <button onclick="registryWrong()">Registrarse</button>
-
-                    </div>
-
-                </div>
-            </div>
+<!--Begining of index's content-->
+<div id="indexContent">
+  <div id="containerLoginAndRegistry">
+    <div id="login">
+      <div class="title">
+        <div class="separadorH">
+          <hr />
         </div>
-        <!--Finish of index's footer-->
+        <div id="textHeaderIndex">
+          <p>INGRESAR</p>
+        </div>
+        <div class="separadorH">
+          <hr />
+        </div>
+      </div>
+      <div class="form">
+        <p class="legend">Ingresa tu email y contraseña para identificarte.</p>
+        <br />
+        <label for="mail">Correo</label>
+        <br />
+        <input [(ngModel)]="loguear.correo" type="email" id="mail" />
+        <div id="wrongMail" style="color: crimson; font-size: 10px"></div>
+        <br />
+        <label for="password">Contraseña</label>
+        <br />
+        <input [(ngModel)]="loguear.pass" type="password" id="password" />
+        
+        <br />
+        <a href="#" style="font-size: 10px">Olvide mi contraseña</a>
+        <br />
+        <button (click)="login()">Iniciar sesion</button>
+      </div>
+      <p id="wrongPassword" [ngClass]="estado">Valida tus credenciales!!!</p>
+    </div>
+
+    <div id="registry">
+      <div class="title">
+        <div class="separadorH">
+          <hr />
+        </div>
+        <div id="textHeaderIndex">
+          <p>REGISTRO</p>
+        </div>
+        <div class="separadorH">
+          <hr />
+        </div>
+      </div>
+      <div class="form">
+        <div style="padding: 10px">
+          <p class="legend">
+            Registrate, recibe acceso a nuestra inovadora forma de comprar.
+          </p>
+          <br />
+          <input
+            [(ngModel)]="registrarUsuario.correo"
+            type="email"
+            id="newMail"
+            placeholder="Correo electrónico*"
+          />
+          <div id="wrong" style="color: crimson; font-size: 10px"></div>
+          <br />
+
+          <input
+            [(ngModel)]="registrarUsuario.pass"
+            type="password"
+            id="newPassword"
+            placeholder="Nueva contraseña*"
+          />
+          <div id="wrong2" style="color: crimson; font-size: 10px"></div>
+          <br />
+          <input
+            type="password"
+            id="passwordConfirm"
+            placeholder="Confirma tu contraseña*"
+          />
+          <div id="wrong3" style="color: crimson; font-size: 10px"></div>
+          <br />
+          <div class="title">
+            <div class="separadorH">
+              <hr />
+            </div>
+
+            <div id="textHeaderIndex" style="width: 45%">
+              <p>DATOS DE CONTACTO</p>
+            </div>
+            <div class="separadorH">
+              <hr />
+            </div>
+          </div>
+          <input
+            [(ngModel)]="registrarUsuario.nombre"
+            type="text"
+            id="completeName"
+            placeholder="Nombres*"
+          />
+          <div id="wrong4" style="color: crimson; font-size: 10px"></div>
+          <br />
+          <input
+            [(ngModel)]="registrarUsuario.apellido"
+            type="text"
+            id="lastName"
+            placeholder="Apellidos*"
+          />
+          <div id="wrong5" style="color: crimson; font-size: 10px"></div>
+          <br />
+          <select
+            [(ngModel)]="registrarUsuario.tipoDocumento"
+            name="idType"
+            id="idType"
+            style="
+              width: 12%;
+              margin-right: 5px;
+              height: 26px;
+              border-width: 2px;
+              border-color: #70707036;
+              color: #707070;
+            "
+          >
+            <option value="CC">CC</option>
+            <option value="CE">CE</option>
+            <option value="TI">TI</option>
+          </select>
+          <input
+            [(ngModel)]="registrarUsuario.numeroDocumento"
+            type="number"
+            style="width: 83%"
+            id="id"
+            placeholder="Num. Documento*"
+          />
+          <div id="wrong6" style="color: crimson; font-size: 10px"></div>
+          <br />
+          <select
+            [(ngModel)]="registrarUsuario.departamento"
+            name="departament"
+            id="departament"
+            style="
+              width: 99%;
+              margin-right: 5px;
+              height: 26px;
+              border-width: 2px;
+              border-color: #70707036;
+              color: #707070;
+            "
+          >
+            <option value="Cundinamarca">Cundinamarca</option>
+            <option value="Antioquia">Antioquia</option>
+            <option value="Amazonas">Amazonas</option>
+          </select>
+          <br />
+          <br />
+          <select
+            [(ngModel)]="registrarUsuario.ciudad"
+            name="city"
+            id="ciy"
+            style="
+              width: 99%;
+              margin-right: 5px;
+              height: 26px;
+              border-width: 2px;
+              border-color: #70707036;
+              color: #707070;
+            "
+          >
+            <option value="Bogotá">Bogotá</option>
+            <option value="Medellin">Medellin</option>
+            <option value="Mitu">Mitu</option>
+          </select>
+          <br />
+          <br />
+          <input
+            [(ngModel)]="registrarUsuario.direccion"
+            type="text"
+            id="address"
+            placeholder="Dirección"
+          />
+          <div id="wrong" style="color: crimson; font-size: 10px"></div>
+          <br />
+          <input
+            [(ngModel)]="registrarUsuario.telefono"
+            type="text"
+            id="tel"
+            placeholder="Teléfono"
+          />
+          <div id="wrong" style="color: crimson; font-size: 10px"></div>
+          <br />
+          <div
+            style="
+              display: flex;
+              text-align: left;
+              justify-content: center;
+              flex-direction: row;
+            "
+          >
+            <input
+              type="radio"
+              id="radio"
+              name="radio"
+              style="width: auto; height: auto; margin: 5px; float: left"
+            />
+            <label
+              style="margin-bottom: -2px; margin-right: 2px"
+              for="radio"
+            ></label>
+            <div style="font-size: 10px; width: 90%; height: 26px; float: left">
+              He leido y acepto los
+              <a
+                href="#"
+                style="text-decoration: none; color: black; font-weight: bold"
+              >
+                Terminos y condiciones
+              </a>
+              y autorizo el manejo de mis datos personales bajo la
+              <a
+                href="#"
+                style="text-decoration: none; color: black; font-weight: bold"
+                >Politica de tratamiento de datos
+              </a>
+            </div>
+          </div>
+          <br />
+          <button (click)="registrar()">Registrarse</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Finish of index's footer-->
 </div>
