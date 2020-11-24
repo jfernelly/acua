@@ -9,7 +9,6 @@ const pedido = require("./routes/pedido");
 
 // App
 const app = express();
-
 app.use(cors());
 app.use(express.json());
 app.use("/api/usuario/", usuario);

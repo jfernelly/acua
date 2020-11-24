@@ -19,7 +19,6 @@ import { HttpClientModule} from '@angular/common/http';
 import { AuthService } from './service/auth.service'
   
 
-import { RegistroComponent } from './home/acceso/registro/registro.component';
 import { ListarComponent } from './home/oficinaVirtual/pedido/listar/listar.component';
 import { CrearComponent } from './home/oficinaVirtual/pedido/crear/crear.component';
 
@@ -44,7 +43,6 @@ const appRouter: Routes = [
     TicketsComponent,
     MisDatosComponent,
     LoginComponent,
-    RegistroComponent,
     ListarComponent,
     CrearComponent
 

@@ -1,0 +1,12 @@
+.mostrar-error {
+    display: block;
+    text-align: center;
+    color: crimson;
+    font-size: 1.3em;
+
+
+}
+
+.ocultar-error {
+    display: none;
+}
