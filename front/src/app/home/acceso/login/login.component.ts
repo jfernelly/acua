@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   
   constructor(private auth: AuthService, private router: Router) {}
-
+  estado = "ocultar-error"
   //Datos obtenidos desde el HTML
   registrarUsuario = {
       "nombre": "",
@@ -55,7 +55,8 @@ export class LoginComponent implements OnInit {
       },
       (err) => {
         console.log(err);
-        window.alert("Tus datos están errados")
+        window.alert("Tus datos están errados");
+        this.estado = "mostrar-error";
       }
     );
   }
