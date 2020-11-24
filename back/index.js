@@ -1,16 +1,16 @@
 // Modulos internos
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors")
+const cors = require("cors");
 // Modulos creados
 const usuario = require("./routes/usuario");
 const auth = require("./routes/auth");
 const pedido = require("./routes/pedido");
-const cors = require("cors");
+
 // App
 const app = express();
 
-app.use(cors())
+app.use(cors());
 app.use(express.json());
 app.use("/api/usuario/", usuario);
 app.use("/api/auth/", auth);
