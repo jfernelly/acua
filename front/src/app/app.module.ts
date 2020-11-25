@@ -15,6 +15,10 @@ import { MisDatosComponent } from './home/oficinaVirtual/mis-datos/mis-datos.com
 import { LoginComponent } from './home/acceso/login/login.component';
 import { RegistroComponent } from './home/acceso/registro/registro.component';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
+import { AuthService } from './service/auth.service'
+
 const appRouter: Routes = [
   {path: 'Ingreso', component: LoginComponent },
   {path: 'Oficina', component: PedidosComponent},
