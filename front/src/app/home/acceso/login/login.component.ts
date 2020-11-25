@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../../service/auth.service';
 import { Router } from '@angular/router';
-import Swal from 'sweetalert2';
+import Swal from 'sweetalert2'; //https://sweetalert2.github.io/
 
 
 
@@ -44,12 +44,9 @@ export class LoginComponent implements OnInit {
           console.log(res);
           this.router.navigate(['/RefreshComponent']);
           //window.alert("Registro exito!!! Ya puedes acceder a nustra aplicación");
-          this.limpiaForm();
+          this.limpiaForm();            
+          //https://sweetalert2.github.io/
           Swal.fire({
-           /*  title: `Registro exito!!`,
-            text: `Ya eres miembro de nuestra comunidad ACUA!!!
-                    Ahora accede a nuestra aplicación`,
-            confirmButtonText: `Ok!` */
             icon: 'success',
             title: `Ya eres miembro de la comunidad ACUA!!!
             Ahora accede a nuestra aplicación`,
@@ -60,6 +57,7 @@ export class LoginComponent implements OnInit {
         },
         (err) => {
           console.log(err);
+          //https://sweetalert2.github.io/
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -70,6 +68,7 @@ export class LoginComponent implements OnInit {
       );
     }
     else{
+      //https://sweetalert2.github.io/
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -83,10 +82,21 @@ export class LoginComponent implements OnInit {
       (res) => {
         console.log(res);
         localStorage.setItem('token', res.jwtToken);
-        this.router.navigate(['/Pedidos'])
+        //https://sweetalert2.github.io/
+        Swal.fire({
+          icon: 'success',
+          title: 'Se vaidaron tus credenciales',
+          showConfirmButton: false,
+          timer: 2500
+        })
+        setTimeout(()=>{
+          this.router.navigate(['/Pedidos'])
+        },2500)
+        
       },
       (err) => {
         console.log(err);
+        //https://sweetalert2.github.io/
         Swal.fire({
           icon: 'error',
           title: 'Oops...',
