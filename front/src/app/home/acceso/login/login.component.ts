@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../../service/auth.service';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
+
+
+
+
 
 @Component({
   selector: 'app-login',
@@ -10,7 +15,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   
   constructor(private auth: AuthService, private router: Router) {}
-  estado = "ocultar-error"
+  
   //Datos obtenidos desde el HTML
   registrarUsuario = {
       "nombre": "",
@@ -33,18 +38,45 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   registrar() {
-    this.auth.registroUsuario(this.registrarUsuario).subscribe(
-      (res) => {
-        console.log(res);
-        this.router.navigate(['/Ingreso']);
-        window.alert("Registro exito!!! Ya puedes acceder a nustra aplicación")
-      },
-      (err) => {
-        console.log(err);
-        window.alert("Tus datos están el sistema")
-      }
-    );
-  }
+    if(this.registrarUsuario.nombre && this.registrarUsuario.pass && this.registrarUsuario.nombre) {
+      this.auth.registroUsuario(this.registrarUsuario).subscribe(
+        (res) => {
+          console.log(res);
+          this.router.navigate(['/RefreshComponent']);
+          //window.alert("Registro exito!!! Ya puedes acceder a nustra aplicación");
+          this.limpiaForm();
+          Swal.fire({
+           /*  title: `Registro exito!!`,
+            text: `Ya eres miembro de nuestra comunidad ACUA!!!
+                    Ahora accede a nuestra aplicación`,
+            confirmButtonText: `Ok!` */
+            icon: 'success',
+            title: `Ya eres miembro de la comunidad ACUA!!!
+            Ahora accede a nuestra aplicación`,
+            //showConfirmButton: false,
+            confirmButtonText: `Ok!`,
+            
+          })
+        },
+        (err) => {
+          console.log(err);
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'El correo ingresado se encuentra registrado',
+            
+          })
+        }
+      );
+    }
+    else{
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Ingresa todos los campos del regristro, estos son obligatorios',
+    })
+    
+  }}
 
   login() {
     this.auth.loginUsuario(this.loguear).subscribe(
@@ -55,9 +87,28 @@ export class LoginComponent implements OnInit {
       },
       (err) => {
         console.log(err);
-        window.alert("Tus datos están errados");
-        this.estado = "mostrar-error";
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Valida la información ingresada',
+          
+        })
       }
     );
+  }
+
+  limpiaForm(){
+    this.registrarUsuario = {
+      "nombre": "",
+      "apellido": "",
+      "tipoDocumento": "",
+      "numeroDocumento": "",
+      "departamento": "",
+      "ciudad": "",
+      "direccion": "",
+      "telefono": "",
+      "correo": "",
+      "pass": "",
+  };
   }
 }

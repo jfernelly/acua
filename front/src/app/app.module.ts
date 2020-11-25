@@ -13,7 +13,6 @@ import { TicketsComponent } from './home/oficinaVirtual/tickets/tickets.componen
 import { MisDatosComponent } from './home/oficinaVirtual/mis-datos/mis-datos.component';
 import { LoginComponent } from './home/acceso/login/login.component';
 
-
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { AuthService } from './service/auth.service'
@@ -44,7 +43,7 @@ const appRouter: Routes = [
     MisDatosComponent,
     LoginComponent,
     ListarComponent,
-    CrearComponent
+    CrearComponent,
 
   ],
   imports: [
@@ -53,7 +52,8 @@ const appRouter: Routes = [
     RouterModule,
     RouterModule.forRoot(appRouter),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
