@@ -15,17 +15,17 @@ export class MisDatosComponent implements OnInit {
   {}
   //Datos obtenidos desde el HTML
   actualizarUsuario = {
-    nombre: '',
-    apellido: '',
-    fechaNacimiento: '',
-    genero: '',
-    departamento: '',
-    ciudad: '',
-    direccion: '',
-    tipoVivienda1: '',
-    tipoVivienda2: '',
-    tipoVivienda3: '',
-    telefono: '',
+    nombre: "",
+    apellido: "",
+    fechaNacimiento: "",
+    genero: "",
+    departamento: "",
+    ciudad: "",
+    direccion: "",
+    tipoVivienda1: "",
+    tipoVivienda2: "",
+    tipoVivienda3: "",
+    telefono: ""
   };
 
   ngOnInit(): void {}
