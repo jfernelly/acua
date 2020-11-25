@@ -46,9 +46,15 @@ const appRouter: Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterModule.forRoot(appRouter)
+    RouterModule.forRoot(appRouter),
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+  
