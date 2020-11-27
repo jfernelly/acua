@@ -3,8 +3,11 @@ const mongoose = require("mongoose");
 // Esquema
 const esquemaPedido = new mongoose.Schema({
   idUsuario: String,
-  pedido: String,
-  estado: String,
+  genero: String,
+  edad: Number,
+  caracter: String,
+  aroma: String,
+  favoritos: String,
   fecha: {
     type: Date,
     default: Date.now,

@@ -27,8 +27,11 @@ router.post("/", auth, async (req, res) => {
   // si existe el usuario creamos una actividad en el pedido
   const pedido = new Pedido({
     idUsuario: usuario._id,
-    pedido: req.body.pedido,
-    estado: req.body.estado,
+    genero: req.body.genero,
+    edad: req.body.edad,
+    caracter: req.body.caracter,
+    aroma: req.body.aroma,
+    favoritos: req.body.favoritos,
   });
   // enviamos el resultado
   const result = await pedido.save();
@@ -46,8 +49,11 @@ router.put("/", auth, async (req, res) => {
     req.body._id,
     {
       idUsuario: usuario._id,
-      pedido: req.body.pedido,
-      estado: req.body.estado,
+      genero: req.body.genero,
+      edad: req.body.edad,
+      caracter: req.body.caracter,
+      aroma: req.body.aroma,
+      favoritos: req.body.favoritos,
     },
     {
       new: true,

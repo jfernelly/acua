@@ -14,10 +14,13 @@ import { MisDatosComponent } from './home/oficinaVirtual/mis-datos/mis-datos.com
 import { LoginComponent } from './home/acceso/login/login.component';
 
 
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http';
+import { FormsModule,  ReactiveFormsModule  } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AuthService } from './service/auth.service'
-  
+import { TokenInterceptorService } from './service/token-interceptor.service';
+import { PedidoService } from './service/pedido.service';
+import { AuthGuard } from '../app/guard/auth.guard'; //Se importa como un servicio
+
 
 import { ListarComponent } from './home/oficinaVirtual/pedido/listar/listar.component';
 import { CrearComponent } from './home/oficinaVirtual/pedido/crear/crear.component';
@@ -26,7 +29,8 @@ import { CrearComponent } from './home/oficinaVirtual/pedido/crear/crear.compone
 const appRouter: Routes = [
   {path: 'Ingreso', component: LoginComponent },
   {path: 'Oficina', component: ListarComponent},
-  {path: 'Pedidos', component: ListarComponent},
+  {path: 'listarPedidos', component: ListarComponent},
+  {path: 'crearPedidos', component: CrearComponent},
   {path: 'Datos', component: MisDatosComponent},
   {path: 'Tickets', component: TicketsComponent},
   {path: '', component: InfoComponent  , pathMatch: 'full'}
@@ -53,9 +57,18 @@ const appRouter: Routes = [
     RouterModule,
     RouterModule.forRoot(appRouter),
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [AuthService],
+  providers: [
+    AuthService,
+    AuthGuard,
+    PedidoService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true,
+    },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
