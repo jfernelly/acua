@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ScriptManagerService } from 'src/app/script-manager.service';
+/* import { ScriptManagerService } from 'src/app/script-manager.service';
+ */import { PedidoService } from '../../../../service/pedido.service';
 
 @Component({
   selector: 'app-listar',
@@ -8,10 +9,22 @@ import { ScriptManagerService } from 'src/app/script-manager.service';
 })
 export class ListarComponent implements OnInit {
 
-  constructor(private scriptManager: ScriptManagerService) { }
-
+  constructor(private pedido: PedidoService/* ,private scriptManager: ScriptManagerService */) {}
+ 
+  lista = [];
+ 
   ngOnInit(): void {
-    this.scriptManager.cargarScript(['accordion']);
+
+    this.pedido.listarPedido().subscribe(
+      (res) => {
+        this.lista = res;
+      },
+      (err) => {
+        console.log(err);
+      }
+    );
+
+   /*  this.scriptManager.cargarScript(['accordion']); */
   }
   
 
