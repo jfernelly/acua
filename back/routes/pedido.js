@@ -32,6 +32,12 @@ router.post("/", auth, async (req, res) => {
     caracter: req.body.caracter,
     aroma: req.body.aroma,
     favoritos: req.body.favoritos,
+    nombres: req.body.nombres,
+    apellidos: req.body.apellidos,
+    direccion: req.body.direccion,
+    ciudad: req.body.ciudad,
+    telefono: req.body.telefono,
+    email: req.body.email
   });
   // enviamos el resultado
   const result = await pedido.save();
@@ -54,6 +60,12 @@ router.put("/", auth, async (req, res) => {
       caracter: req.body.caracter,
       aroma: req.body.aroma,
       favoritos: req.body.favoritos,
+      nombres: req.body.nombres,
+      apellidos: req.body.apellidos,
+      direccion: req.body.direccion,
+      ciudad: req.body.ciudad,
+      telefono: req.body.telefono,
+      email: req.body.email
     },
     {
       new: true,

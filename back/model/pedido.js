@@ -8,6 +8,12 @@ const esquemaPedido = new mongoose.Schema({
   caracter: String,
   aroma: String,
   favoritos: String,
+  nombres: String,
+  apellidos: String,
+  direccion: String,
+  ciudad: String,
+  telefono: String,
+  email: String,
   fecha: {
     type: Date,
     default: Date.now,
