@@ -21,50 +21,52 @@
             <p>Por favor, indicanos que tipo de perfume quieres.</p>
             <div class="Img3">
                 <div class="portaImg">
-                    <input type="img" id="genero" name="genero" [(ngModel)]="crearPedido.genero" value="Hombre" src="../../../../../assets/img/product-11.jpg" alt="Hombre">
-                    <p>Para Hombre</p>
-                </div>
-                <!-- <div class="portaImg">
-                    <input [(ngModel)]="crearPedido.genero" type="image" id="selecMujer" name="selecMujer" value="Mujer" src="../../../../../assets/img/product-07.jpg" alt="Mujer">
-                    <p>Para Mujer</p>
+                   <img src="../../../../../assets/img/product-11.jpg" alt="Hombre">
+                    <p>Para Hombre<input type="radio" name="genero" id="genero" class="" value="Hombre" [(ngModel)]="crearPedido.genero"></p>
+                    
                 </div>
                 <div class="portaImg">
-                    <input [(ngModel)]="crearPedido.genero" type="image" id="selecUnisex" name="selecUnisex" value="Unisex" src="../../../../../assets/img/unisex.png" alt="Unisex">
-                    <p>Unisex</p>
-                </div> -->
+                    <img src="../../../../../assets/img/product-07.jpg" alt="Mujer">
+                    <p>Para Mujer<input type="radio" name="genero" id="genero" class="" value="Mujer" [(ngModel)]="crearPedido.genero"></p>
+                    
+                </div>
+                <div class="portaImg">
+                    <img src="../../../../../assets/img/unisex.png" alt="Unisex">
+                    <p>Unisex<input type="radio" name="genero" id="genero" class="" value="Unisex" [(ngModel)]="crearPedido.genero"></p>
+                    
+                </div>
             </div>
         </section>
         <section id="question2">
             <h1 id="tituloPregunta">Edad</h1>
             <p>Por favor, indicanos tu edad o la edad aproximada de la persona que utilizará el perfume.</p>
-            <input type="number" name="edad" id="edad" class="decoInput" [(ngModel)]="crearPedido.edad" placeholder="Escriba la edad aqui.">
-            <input type="radio" name="genero" id="genero" class="decoInput" value="Hombre" [(ngModel)]="crearPedido.genero">
+            <input type="number" name="edad" id="edad" class="decoInput" placeholder="Escriba la edad aqui." [(ngModel)]="crearPedido.edad">
         </section>
         <section id="question3">
             <h1 id="tituloPregunta">Carácter</h1>
             <p>Por favor, indicanos tu carácter o de la persona que utilizará el perfume.</p>
             <div class="Img3">
                 <div class="portaImg">
-                    <a href="#"><img src="../../../../../assets/img/informal.png" alt="Informal"></a>
-                    <p>Informal</p>
+                    <img src="../../../../../assets/img/informal.png" alt="Informal">
+                    <p>Informal<input type="radio" name="caracter" id="caracter" class="" value="Informal" [(ngModel)]="crearPedido.caracter"></p>
                 </div>
                 <div class="portaImg">
-                    <a href="#"><img src="../../../../../assets/img/natural.png" alt="Natural"></a>
-                    <p>Natural</p>
+                    <img src="../../../../../assets/img/natural.png" alt="Natural">
+                    <p>Natural<input type="radio" name="caracter" id="caracter" class="" value="Natural" [(ngModel)]="crearPedido.caracter"></p>
                 </div>
                 <div class="portaImg">
-                    <a href="#"><img src="../../../../../assets/img/clasico.png" alt="Clasico"></a>
-                    <p>Clásico</p>
+                    <img src="../../../../../assets/img/clasico.png" alt="Clasico">
+                    <p>Clásico<input type="radio" name="caracter" id="caracter" class="" value="Clasico" [(ngModel)]="crearPedido.caracter"></p>
                 </div>
             </div>
             <div class="Img3">
                 <div class="portaImg">
-                    <a href="#"><img src="../../../../../assets/img/contemp.png" alt="Contemporáneo"></a>
-                    <p>Informal</p>
+                    <img src="../../../../../assets/img/contemp.png" alt="Contemporáneo">
+                    <p>Contemporáneo<input type="radio" name="caracter" id="caracter" class="" value="Contemporaneo" [(ngModel)]="crearPedido.caracter"></p>
                 </div>
                 <div class="portaImg">
-                    <a href="#"><img src="../../../../../assets/img/seductor.png" alt="Seductor"></a>
-                    <p>Natural</p>
+                    <img src="../../../../../assets/img/seductor.png" alt="Seductor">
+                    <p>Seductor<input type="radio" name="caracter" id="caracter" class="" value="Seductor" [(ngModel)]="crearPedido.caracter"></p>
                 </div>
             </div>
         </section>
@@ -73,45 +75,45 @@
             <p>Elige una de las siguiente familias olfativas, que marcará el carácter principal del perfume.</p>
             <div class="Img3">
                 <div class="portaImgFamily">
-                    <a href="#"><img src="../../../../../assets/img/floral.png" alt="Floral"></a>
-                    <p>Informal</p>
+                    <img src="../../../../../assets/img/floral.png" alt="Floral">
+                    <p>Informal<input type="radio" name="aroma" id="aroma" class="" value="Floral" [(ngModel)]="crearPedido.aroma"></p>
                 </div>
                 <div class="portaImgFamily">
-                    <a href="#"><img src="../../../../../assets/img/frutal.png" alt="Frutal"></a>
-                    <p>Natural</p>
+                    <img src="../../../../../assets/img/frutal.png" alt="Frutal">
+                    <p>Frutal<input type="radio" name="aroma" id="aroma" class="" value="Frutal" [(ngModel)]="crearPedido.aroma"></p>
                 </div>
                 <div class="portaImgFamily">
-                    <a href="#"><img src="../../../../../assets/img/verde.png" alt="Verde"></a>
-                    <p>Clásico</p>
+                    <img src="../../../../../assets/img/verde.png" alt="Verde">
+                    <p>Verde<input type="radio" name="aroma" id="aroma" class="" value="Verde" [(ngModel)]="crearPedido.aroma"></p>
                 </div>
                 <div class="portaImgFamily">
-                    <a href="#"><img src="../../../../../assets/img/aromatic.png" alt="Aromático"></a>
-                    <p>Clásico</p>
+                    <img src="../../../../../assets/img/aromatic.png" alt="Aromático">
+                    <p>Aromático<input type="radio" name="aroma" id="aroma" class="" value="Aromático" [(ngModel)]="crearPedido.aroma"></p>
                 </div>
             </div>
             <div class="Img3">
                 <div class="portaImgFamily">
-                    <a href="#"><img src="../../../../../assets/img/fougere.png" alt="Fougére"></a>
-                    <p>Informal</p>
+                    <img src="../../../../../assets/img/fougere.png" alt="Fougére">
+                    <p>Fougére<input type="radio" name="aroma" id="aroma" class="" value="Fougére" [(ngModel)]="crearPedido.aroma"></p>
                 </div>
                 <div class="portaImgFamily">
-                    <a href="#"><img src="../../../../../assets/img/citrico.png" alt="Cítrico"></a>
-                    <p>Natural</p>
+                    <img src="../../../../../assets/img/citrico.png" alt="Cítrico">
+                    <p>Cítrico<input type="radio" name="aroma" id="aroma" class="" value="Cítrico" [(ngModel)]="crearPedido.aroma"></p>
                 </div>
                 <div class="portaImgFamily">
-                    <a href="#"><img src="../../../../../assets/img/chipre.png" alt="Chipre"></a>
-                    <p>Clásico</p>
+                    <img src="../../../../../assets/img/chipre.png" alt="Chipre">
+                    <p>Chipre<input type="radio" name="aroma" id="aroma" class="" value="Chipre" [(ngModel)]="crearPedido.aroma"></p>
                 </div>
                 <div class="portaImgFamily">
-                    <a href="#"><img src="../../../../../assets/img/madera.png" alt="Amaderada"></a>
-                    <p>Clásico</p>
+                    <img src="../../../../../assets/img/madera.png" alt="Amaderada">
+                    <p>Amaderada<input type="radio" name="aroma" id="aroma" class="" value="Amaderada" [(ngModel)]="crearPedido.aroma"></p>
                 </div>
             </div>
         </section>
         <section id="question5">
             <h1 id="tituloPregunta">Perfumes Favoritos</h1>
             <p>Por favor, indicanos cuales son tus perfumes favoritos o de la persona que utilizará el perfume.</p>
-            <input type="text" name="namePerfume" id="namePerfume" class="decoInput" placeholder="Escriba aqui su respuesta...">
+            <input type="text" name="namePerfume" id="namePerfume" class="decoInput" placeholder="Escriba aqui su respuesta..." [(ngModel)]="crearPedido.favoritos">
         </section>
         <!-- Finish Questions-->
 
@@ -135,12 +137,12 @@
     <section class="datosEnvio">
         <div class="datosInputs">
             <p>Diligencia los datos completos para el envió de las tres muestras según tus gustos y personalidad.</p>
-            <input type="text" name="nombres" id="nombres" class="decoInput" placeholder="Nombres">
-            <input type="text" name="apellidos" id="apellidos" class="decoInput" placeholder="Apellidos">
-            <input type="text" name="ciudad" id="ciudad" class="decoInput" placeholder="Ciudad">
-            <input type="text" name="direccion" id="direccion" class="decoInput" placeholder="Dirección">
-            <input type="number" name="telContact" id="telContact" class="decoInput" placeholder="Teléfono de Contacto">
-            <input type="email" name="correo" id="correo" class="decoInput" placeholder="E-mail">
+            <input type="text" name="nombres" id="nombres" class="decoInput" placeholder="Nombres" [(ngModel)]="crearPedido.nombres">
+            <input type="text" name="apellidos" id="apellidos" class="decoInput" placeholder="Apellidos" [(ngModel)]="crearPedido.apellidos">
+            <input type="text" name="ciudad" id="ciudad" class="decoInput" placeholder="Ciudad" [(ngModel)]="crearPedido.ciudad">
+            <input type="text" name="direccion" id="direccion" class="decoInput" placeholder="Dirección" [(ngModel)]="crearPedido.direccion">
+            <input type="number" name="telContact" id="telContact" class="decoInput" placeholder="Teléfono de Contacto" [(ngModel)]="crearPedido.telefono">
+            <input type="email" name="correo" id="correo" class="decoInput" placeholder="E-mail" [(ngModel)]="crearPedido.email">
             <div class="">
                 <div class="enlace">
                     <button (click)="crear()">Enviar</button>
@@ -149,5 +151,6 @@
         </div>
 
     </section>
+
     <!-- Finish Datos de envio-->
 </div>

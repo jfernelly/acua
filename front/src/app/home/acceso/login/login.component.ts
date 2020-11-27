@@ -85,7 +85,7 @@ export class LoginComponent implements OnInit {
         //https://sweetalert2.github.io/
         Swal.fire({
           icon: 'success',
-          title: 'Se vaidaron tus credenciales',
+          title: 'Se validaron tus credenciales',
           showConfirmButton: false,
           timer: 2500
         })
