@@ -90,7 +90,7 @@ export class LoginComponent implements OnInit {
           timer: 2500
         })
         setTimeout(()=>{
-          this.router.navigate(['/listarPedidos'])
+          this.router.navigate(['/crearPedidos'])
         },2500)
         
       },

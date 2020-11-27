@@ -1,0 +1,169 @@
+#tituloPregunta{
+    color: #0cbed2;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.decoInput{
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    -webkit-appearance: textfield !important;
+    margin: 0;
+    -moz-appearance:textfield !important;
+}
+.contentQuestion{
+    width: 100%;
+    height: auto;
+}
+.buttonQuestion{
+    margin: auto;
+    margin-top: 30px; 
+    background-color: #0cbed2;
+    display: grid;
+    align-items: center;
+    height: 40px; 
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #999;
+}
+.buttonQuestion:hover {
+    background-color: #0ba5b6;
+    cursor: pointer;
+    height: 38px; 
+    width: 98px;
+    box-shadow: none;
+  }
+button{
+   margin: auto;
+    margin-top: 30px; 
+    background-color: #0cbed2;
+    display: grid;
+    align-items: center;
+    height: 40px; 
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #999;
+}
+button:hover{
+    background-color: #0ba5b6;
+    cursor: pointer;
+    height: 38px; 
+    width: 98px;
+    box-shadow: none;
+}
+.Img3{
+    width: auto;
+    height: auto;
+    display: inline-flex;
+}
+.portaImg{
+    width: auto;
+    height: 180px;
+    text-align: center;
+    margin: 0px 30px 15px 0;
+}
+
+.portaImg input{
+    width: auto;
+    height: 150px;
+    border-radius: 10px;
+}
+.portaImg p{
+    color: #0cbed2;
+}
+.portaImgFamily{
+    width: auto;
+    height: 180px;
+    text-align: center;
+    margin: 0px 5px 15px 0;
+}
+.portaImgFamily p{
+    color: #0cbed2;
+}
+#question1{
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    margin-top: 10%;
+    margin-bottom: 17%;
+    position: relative;
+}
+#question1 p{
+    margin-bottom: 30px;
+}
+
+#question2{
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    margin-top: 10%;
+    margin-bottom: 17%;
+    position: relative;
+}
+#question2 p{
+    margin-bottom: 30px;
+}
+#question3{
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    margin-top: 10%;
+    margin-bottom: 17%;
+    position: relative;
+}
+#question3 p{
+    margin-bottom: 30px;
+}
+#question4{
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    margin-top: 10%;
+    margin-bottom: 17%;
+    position: relative;
+}
+#question4 p{
+    margin-bottom: 30px;
+}
+#question5{
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    margin-top: 10%;
+    margin-bottom: 17%;
+    position: relative;
+}
+#question5 p{
+    margin-bottom: 30px;
+}
+
+/*CSS Datos de Envio*/
+.datosEnvio{
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 17%;
+
+  }
+  .datosInputs{
+      margin-bottom: 50px;
+      align-content: center;
+  }
+  .datosInputs input{
+      margin: 0 5px 10px 0;
+  }
+  .datosInputs p{
+      margin-bottom: 30px;
+  }
+  #indexContent {
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+  }
