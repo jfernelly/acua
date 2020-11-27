@@ -36,8 +36,10 @@ export class CrearComponent implements OnInit {
           title: `Se envió tu formulación. Pronto nos contactaremos contigo!`,
           //showConfirmButton: false,
           confirmButtonText: `Ok!`,
-    
         });
+        setTimeout(()=>{
+          this.router.navigate(['/listarPedidos'])
+        },2500);
 
       },
       (err) => { 
